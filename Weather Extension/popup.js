@@ -37,14 +37,14 @@ getBtn.onclick = function () {
         updateTemp("c");
 
         city.textContent = "📍 " + data.location.name + ", " + data.location.region;
-        cond.textContent = "📝 " + data.current.condition.text;
+        cond.textContent = data.current.condition.text;
         icon.src = "https:" + data.current.condition.icon;
 
         loader.classList.add("hidden");
         result.classList.remove("hidden");
         toggle.classList.remove("hidden");
       })
-      
+
       .catch(function () {
         loader.classList.add("hidden");
         errorBox.textContent = "Failed to load weather data.";
