@@ -1,0 +1,95 @@
+body {
+  margin: 0 auto;
+  padding: 20px;
+  width: 300px;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #3bbef6, #1c8fb9)fixed;
+  color: #fff;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.toggle button {
+  width: 45%;
+  background: #fff;
+  color: #2563eb;
+  font-weight: bold;
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.toggle button.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+#loader {
+  text-align: center;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+#result {
+  background: white;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#result p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 8px;
+}
+
+#error {
+  margin-top: 12px;
+  background: #ff4d4f;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
